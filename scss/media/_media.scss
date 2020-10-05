@@ -1,0 +1,43 @@
+@media screen and (max-width: 500px) {
+  // Utilities
+  // Text
+  .x-large {
+    font-size: 2.3rem;
+  }
+  .large {
+    font-size: 1.3rem;
+  }
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  // Buttons
+  .btn-xl {
+    font-size: 1.1rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .tab-content {
+    &__inner-1 {
+      grid-template-columns: 1fr;
+    }
+
+    &__inner-2 {
+      grid-template-areas:
+        "spans"
+        "button"
+        "bottom-1"
+        "bottom-2"
+        "bottom-3";
+    }
+  }
+
+  .footer {
+    &-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

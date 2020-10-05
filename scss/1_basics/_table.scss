@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border-spacing: 0;
+
+  th {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.8rem;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    tr {
+      &:nth-child(odd) {
+        background: #222;
+      }
+
+      td {
+        padding: 0.6rem;
+
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

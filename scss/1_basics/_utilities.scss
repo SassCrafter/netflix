@@ -1,0 +1,85 @@
+.container {
+  max-width: $max-width;
+  height: 100%;
+  padding: 0 3rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  max-width: auto;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background: $primary-color;
+  color: #fff;
+  text-transform: capitalize;
+  transition: transform 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-round {
+    border-radius: 0.5rem;
+  }
+  &-xl {
+    font-size: 1.5rem;
+  }
+}
+
+// Text
+.x-large {
+  font-size: 4rem;
+}
+.large {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+// Margin and Padding
+$col: (1, 2, 3, 4, 5);
+
+@each $number in $col {
+  // All around margins
+  .m-#{$number} {
+    margin: #{$number}rem;
+  }
+  // Margin top and bottom
+  .my-#{$number} {
+    margin: #{$number}rem 0;
+  }
+
+  // All around padding
+  .p-#{$number} {
+    padding: #{$number}rem;
+  }
+  // Padding top and bottom
+  .py-#{$number} {
+    padding: #{$number}rem 0;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid $primary-color;
+}
+
+.show {
+  display: grid !important;
+}

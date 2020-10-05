@@ -1,0 +1,45 @@
+.tab-content {
+  #tab-1-content,
+  #tab-2-content,
+  #tab-3-content {
+    display: none;
+  }
+
+  &__inner-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  &__inner-2 {
+    display: grid;
+    grid-template-areas:
+      "spans spans button"
+      "bottom-1 bottom-2 bottom-3";
+    grid-gap: 1.5rem;
+    align-items: start;
+    justify-content: center;
+
+    .spans {
+      grid-area: spans;
+    }
+    .btn {
+      grid-area: button;
+    }
+    &-bottom {
+      &-1 {
+        grid-area: bottom-1;
+      }
+      &-2 {
+        grid-area: bottom-2;
+      }
+      &-3 {
+        grid-area: bottom-3;
+      }
+    }
+  }
+}
